@@ -1,16 +1,16 @@
 class Stick{
-constructor(x,y){
+constructor(x,y,width,height){
 
  var options={
-'restition':0.8,
+'restitution':0.8,
 'friction':0.3,
-'density':1.0
-
+'density':1.0,
+isStatic:true
 }
 
-this.body=Bodies.rectangle(x,y,50,10,options)
-this.width=50
-this.height=10
+this.body=Bodies.rectangle(x,y,width,height,options)
+this.width=width
+this.height=height
 World.add(world,this.body)
 
 
@@ -20,13 +20,13 @@ World.add(world,this.body)
 }
 display(){
 var pas =this.body.position;
-Push();
+push();
 translate(pas.x,pas.y)
-restMode(CENTER)
+rectMode(CENTER)
 strokeWeight(4);
-Fill(255)
+fill(241,78,86)
 rect(0,0,this.width,this.height);
-Pop();
+pop();
 
 
 
