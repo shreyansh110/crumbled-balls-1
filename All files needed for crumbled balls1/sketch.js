@@ -21,7 +21,7 @@ log1=new Stick(800,475,150,15);
 log2=new Stick(728.5,435,15,90);
 log3=new Stick(880,435,15,90);
 log4=new Ground(500,490,1100,20)
-paper=new Ball(200,470,10)
+paper=new Ball(50,470,10)
 	Engine.run(engine);
   
 }
@@ -45,7 +45,8 @@ function draw() {
 
 function keyPressed(){
 if(keyCode=== UP_ARROW){
-Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-85})
+Matter.Body.applyForce(paper.body,paper.body.position,{x:
+  3,y:-3})
 
 }
 
