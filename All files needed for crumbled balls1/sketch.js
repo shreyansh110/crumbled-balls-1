@@ -17,11 +17,11 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-log1=new Stick(800,475,150,15);
-log2=new Stick(728.5,435,15,90);
-log3=new Stick(880,435,15,90);
+log1=new Stick(830,475,195,12);
+log2=new Stick(728.5,435,15,135);
+log3=new Stick(920,435,15,197);
 log4=new Ground(500,490,1100,20)
-paper=new Ball(50,470,10)
+paper=new Ball(50,470,15)
 	Engine.run(engine);
   
 }
@@ -46,7 +46,7 @@ function draw() {
 function keyPressed(){
 if(keyCode=== UP_ARROW){
 Matter.Body.applyForce(paper.body,paper.body.position,{x:
-  1,y:-1})
+  0.5,y:-0.5})
 
 }
 
