@@ -17,9 +17,10 @@ function setup() {
 	world = engine.world;
 
 	//Create the Bodies Here.
-log1=new Stick(830,475,195,12);
-log2=new Stick(728.5,435,15,135);
-log3=new Stick(920,435,15,197);
+log1=new Stick(830,475,215,12);
+log2=new Stick(713.5,444,15,80);
+log3=new Stick(940,435,15,220);
+log5=new Stick(990,500,10,1000)
 log4=new Ground(500,490,1100,20)
 paper=new Ball(50,470,15)
 	Engine.run(engine);
@@ -37,6 +38,7 @@ function draw() {
   log3.display();
   log4.display();
   paper.display();
+  log5.display();
  
   drawSprites();
   keyPressed();
